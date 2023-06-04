@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BTU Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="container">
+        <div class="logo">
+          <a href="#">BTU</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="hero">
+      <div class="container">
+        <h1>Welcome to BTU</h1>
+        <p>Best Technical University</p>
+      </div>
+    </div>
+  </header>
+
+  <section class="features">
+    <div class="container">
+      <div class="feature">
+        <i class="fas fa-laptop-code"></i>
+        <h2>Learn Coding</h2>
+        <p>Explore various programming languages and enhance your coding skills.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-chalkboard-teacher"></i>
+        <h2>Qualified Instructors</h2>
+        <p>Get trained by experienced and knowledgeable instructors.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-certificate"></i>
+        <h2>Industry-Recognized Certifications</h2>
+        <p>Gain certifications that are recognized by leading industries.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="upload-form">
+    <div class="container">
+      <h2>Upload Form</h2>
+      <form id="uploadForm">
+        <div class="form-group">
+          <label for="fileInput">Image File:</label>
+          <input type="file" id="fileInput" name="fileInput" accept="image/*" required>
+        </div>
+        <div class="form-group">
+          <label for="modelSelect">Hugging Face Model:</label>
+          <select id="modelSelect" name="modelSelect" required>
+            <option value="" disabled selected>Select a model</option>
+            <option value="https://api-inference.huggingface.co/models/google/mobilenet_v1_0.75_192">MobileNet</option>
+            <option value="https://api-inference.huggingface.co/models/facebook/detr-resnet-50">DETR ResNet-50</option>
+            <option value="https://api-inference.huggingface.co/models/hustvl/yolos-tiny">YOLOs Tiny</option>
+            <option value="https://api-inference.huggingface.co/models/nvidia/mit-b0">MIT-B0</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 BTU. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
